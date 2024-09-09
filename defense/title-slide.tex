@@ -1,0 +1,32 @@
+\setbeamertemplate{title page}{
+  % insert an image
+    \begin{minipage}[b][\paperheight]{\textwidth}
+      \vspace{-0.05\paperheight}
+        \ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
+        \vfill
+        \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+        \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+        \usebeamertemplate*{title separator}
+        \vspace*{4px}
+        \begin{minipage}[]{0.45\textwidth}
+            \centering
+            \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+            \vspace*{1.8em}
+        \end{minipage}
+        \begin{minipage}[]{0.45\textwidth}
+            \centering
+            \begin{tabular}{@{}r@{\hspace{0.5em}}l}
+                {\small Supervised by:} & {\small prof. \textit{Ruggero Lot}}  \\
+                {\small Cosupervised by:} & {\small prof. \textit{Stefano Cozzini}}
+            \end{tabular}
+         \end{minipage}
+        \vspace*{7px}
+        \center\small Graduation session: M.Sc. in \textit{Data Science and Scientific Computing}
+        \center\ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+        \vspace*{14px}
+        \raggedright \textit{University of Trieste}
+        \vspace*{15px}
+    \end{minipage}
+}
+
+\frame{\titlepage}

@@ -1,0 +1,9 @@
+# LaTeX outputs
+
+*.aux
+*.log  
+*.nav  
+*.out  
+*.snm  
+*.toc
+*.pdf  

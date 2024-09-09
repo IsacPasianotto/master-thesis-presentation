@@ -1,0 +1,61 @@
+\title{\LARGE{\textsc{\textbf{New approaches in scientific computing: \\the design of a cloud-ready HPC infrastructure}}}}
+\author{\textit{\textbf{Isac Pasianotto}}}
+\titlegraphic{
+    \includegraphics[height=0.10\paperheight]{img/logos/logo_units_100.png}
+    \hfill
+    \includegraphics[height=0.10\paperheight]{img/logos/logo-AREA.png}
+}
+
+\date{18th September 2024}
+
+%%
+%%  Theme
+%%
+
+\usefonttheme{professionalfonts}
+\usetheme[
+    titleformat=regular,
+    sectionpage=progressbar,
+    subsectionpage=none,
+    numbering=fraction,
+    progressbar=frametitle,
+    block=fill
+    ]{metropolis}
+\setmonofont{FiraMono-Regular.otf}
+
+
+% Change Colors/Width of Progress Bars
+% Increase the progress bar height
+\makeatletter
+\setlength{\metropolis@progressinheadfoot@linewidth}{1.5pt}
+\makeatother
+
+
+%%
+%% Add logos in title-bar
+%%
+
+\addtobeamertemplate{frametitle}{}{%
+    % \begin{textblock*}{100mm}(0.69\textwidth,-0.94cm)       % Defalut Beamer output ratio
+    \begin{textblock*}{100mm}(0.765\textwidth,-0.94cm)      % 16:9 and 16:10
+        \hspace{10px}
+        \includegraphics[valign=c, height=0.45cm]{img/logos/units_sigillo-invertito}
+        \hspace{3px}
+        \includegraphics[valign=c, height=0.4cm]{img/logos/Logo-AREA-invertito}
+        \hspace{2px}
+        \includegraphics[valign=c, height=0.4cm]{img/logos/logo_dssc_white}
+\end{textblock*}}
+
+%%
+%% Custom section tracker
+%%
+
+% TODO -> evaluate if keep it or not
+\AtBeginSection[]
+{
+    \begin{frame}
+        \vspace*{30px}
+        \frametitle{\protect{\emoji{round-pushpin}} \textit{We are here}}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
