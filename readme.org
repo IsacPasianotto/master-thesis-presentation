@@ -1,0 +1,4 @@
+#+title: LaTeX presentations with beamer
+#+author: Isac Pasianotto
+
+TODO: all
