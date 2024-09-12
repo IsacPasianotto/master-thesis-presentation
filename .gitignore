@@ -7,3 +7,12 @@
 *.snm  
 *.toc
 *.pdf  
+
+
+# Editor folders
+**/auto/
+
+
+# Editor folders
+**/auto/
+
