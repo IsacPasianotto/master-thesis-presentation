@@ -36,7 +36,7 @@
 %%
 
 \addtobeamertemplate{frametitle}{}{%
-    % \begin{textblock*}{100mm}(0.69\textwidth,-0.94cm)       % Defalut Beamer output ratio
+    \vspace{-0.15em}
     \begin{textblock*}{100mm}(0.765\textwidth,-0.94cm)      % 16:9 and 16:10
         \hspace{10px}
         \includegraphics[valign=c, height=0.45cm]{img/logos/units_sigillo-invertito}
@@ -58,4 +58,36 @@
         \frametitle{\protect{\emoji{round-pushpin}} \textit{We are here}}
         \tableofcontents[currentsection]
     \end{frame}
+}
+
+%%
+%% Custom quotation box
+%%
+
+\let\oldquote\quote
+\let\endoldquote\endquote
+\renewenvironment{quote}[2][]
+{\if\relax\detokenize{#1}\relax
+    \def\quoteauthor{#2}%
+    \else
+    \def\quoteauthor{#2~---~#1}%
+    \fi
+    \oldquote}
+{\par\nobreak\smallskip\hfill -- \quoteauthor%
+    \endoldquote\addvspace{\bigskipamount}}
+
+
+%%
+%% Theme color
+%%
+
+\definecolor{MetroLinks}{RGB}{96, 76, 56}
+\definecolor{MetroCite}{RGB}{35, 55, 59}
+\definecolor{MetroUrl}{RGB}{20, 176, 61}
+
+\hypersetup{
+    colorlinks,
+    linkcolor=MetroLinks,
+    citecolor=MetroCite,
+    urlcolor=MetroUrl,
 }
