@@ -13,6 +13,6 @@ if [ ! -f $targetfile ]; then
 fi
 
 # compile the target file
-lualatex -shell-escape $targetfile
+lualatex $targetfile
 # recompile it for the references
-lualatex -shell-escape $targetfile
+lualatex $targetfile

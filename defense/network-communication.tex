@@ -1,0 +1,23 @@
+\begin{frame}
+  \frametitle{\emoji{puzzle-piece} \textit{CNI plugins}}
+  \vspace{.5em}
+  \begin{block}{\emoji{memo} \emph{Def.}}
+    \begin{quote}{Red Hat sysadmin's guide}
+      \vspace{.5em}
+      \small
+      A CNI plugin is responsible for \alert{\textbf{inserting a network interface}} into the
+      \alert{\textbf{container network namespace}} (e.g., one end of a virtual ethernet (veth)
+      pair) and making any \alert{\textbf{necessary changes}} on the host (e.g., attaching the
+      other end of the veth into a bridge).
+    \end{quote}
+  \end{block}
+  \pause
+  \begin{figure}
+    \centering
+    \includegraphics[height=.5\textheight]{defense/img/CNI-generic}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{exploding-head}  \textit{``And making any necessary changes on the host $\dots$''}}
+\end{frame}

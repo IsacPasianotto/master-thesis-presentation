@@ -1,0 +1,136 @@
+\begin{frame}
+  \frametitle{\emoji{face-in-clouds} What is \textit{``Cloud Computing''}}
+
+  \begin{quote}{R. Buyya \emph{et~al.} \textit{Cloud Computing: Principles and Paradigms}}
+    ``Cloud computing has been coined as an umbrella term to describe a category of
+    sophisticated \alert{\textbf{on-demand computing services}} initially offered by commercial providers''
+  \end{quote}
+
+  \pause
+
+  \begin{block}{\emoji{cloud} \textit{for us:}}
+    \textit{
+      Cloud Computing is the result of the \alert{\textbf{evolution}} of the computing concept
+      \alert{\textbf{driven by the technology}} improvements and by users’ requirements.
+    }
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{man-technologist-light-skin-tone} \textit{Which
+      technologies?}}
+
+  \emoji{desktop-computer} \textbf{Virtualization}
+  \begin{itemize}
+    \itemsep0em
+    \item Isolated environment with its own OS and resources
+    \item \textbf{\alert{Overhead}} for the \alert{hypervisor}
+  \end{itemize}
+
+  \pause
+
+  \emoji{package} \textbf{Containerization}
+  \begin{itemize}
+    \itemsep0em
+    \item Host's \alert{processes} $\to$ they share the Kernel with the host
+    \item Build over \alert{namespaces}, \alert{cgroups}, and \alert{capabilities}
+  \end{itemize}
+
+  \pause
+
+   \begin{figure}
+    \centering
+    % \includegraphics[width=0.75\textwidth]{defense/img/VM-vs-Container}
+    \includegraphics[width=0.75\textwidth]{defense/img/VM-vs-Container-bw}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{books} \textit{Related works}}
+  \begin{itemize}
+    \itemsep0em
+    \item The adoption of Cloud for production application was very immediate
+    \item The idea of performing the \alert{same transition for HPC} is not new
+    \item Many effort in the early 2010s
+  \end{itemize}
+
+  \pause
+
+  \begin{block}{\emoji{skull-and-crossbones} \textit{\textbf{The results were tragic!}}}
+    \begin{itemize}
+      \itemsep0em
+    \item Only considered \alert{Public Clouds}
+    \item Containerization was still in an embryonic state $\to$ \alert{VMs only}
+    \item \textit{Multiple performance shortcoming} were reported
+    \end{itemize}
+    {
+      % \large
+      \emoji{hourglass-not-done} \textit{\textbf{
+          Network latency, and I/O rapidly become the bottlenecks of the system
+        }}
+      }
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{face-with-raised-eyebrow} \textit{So why persist any
+      longer?}}
+  \only<1>{There are \alert{\textbf{3 main reasons}} for not giving up:}
+  \only<2->{There are 3 main reasons for not giving up:}
+
+  \vspace{0.2em}
+  \emoji{locked-with-key} \textbf{Private cloud}
+
+  \pause
+
+  \vspace{0.2em}
+  \emoji{gear} \textbf{Technological progress}
+  \begin{itemize}
+    \itemsep0em
+    \item \alert{\textbf{Containers}} are the \textit{de-facto standard}
+    \item Computational drop performance completely negligible
+    \item Many improvements and alternative solutions in for networking
+  \end{itemize}
+
+  \pause
+
+  % \vspace {0.2em}
+  % \emoji{balance-scale} \textbf{Performance/Usability trade-off}
+  % \begin{itemize}
+  %   \itemsep0em
+  %   \item \alert{Ease of use} and \alert{scalability} of the cloud (SaaS)
+  %   \item \alert{\textbf{Container orchestration}}: simplify the interaction
+  %     with the cluster for both the user and the administrator
+  %   \begin{itemize}
+  %     \itemsep0em
+  %     \item Automatic scaling and load balancing
+  %     \item Availability, self healing and fault tolerance
+  %     \item \alert{\textbf{Standardized API}} $\to$ portability
+  %     \item $\dots$
+  %   \end{itemize}
+  % \end{itemize}
+
+  \vspace{0.2em}
+  \begin{columns}
+    \column{0.66\textwidth}
+    \emoji{balance-scale} \textbf{Performance/Usability trade-off}
+    \begin{itemize}
+      \itemsep0em
+      \item \alert{Ease of use} and \alert{scalability} of the cloud (SaaS)
+      \item \alert{\textbf{Container orchestration}}: simplify the interaction
+        with the cluster for both the user and the administrator
+      \begin{itemize}
+        \itemsep0em
+        \item Automatic scaling and load balancing
+        \item Availability, self healing and fault tolerance
+        \item \alert{\textbf{Standardized API}} $\to$ portability
+        \item $\dots$
+      \end{itemize}
+    \end{itemize}
+    \column{0.33\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.75\textwidth]{img/logos/kubernetes-logo}
+    \end{figure}
+    \end{columns}
+\end{frame}

@@ -1,4 +1,6 @@
-\documentclass[10pt, aspectratio=169, compress, protectframetitle, handout]{beamer}
+% handout -> ignore pauses, needed only for printing
+% \documentclass[10pt, aspectratio=169, compress, protectframetitle, handout]{beamer}
+\documentclass[10pt, aspectratio=169, compress, protectframetitle]{beamer}
 
 \usepackage{resources/allpackages}
 \input{resources/aesthetics}
@@ -8,9 +10,20 @@
   \input{defense/aim-statement}
 
   \section{\emoji{puzzle-piece} Background essentials in a nutshell}
-  \input{defense/what-is-cloud}
+  \input{defense/background-essentials-in-a-nutshell}
 
+  \section{\emoji{ping-pong} Communication \& CNI plugins}
+  \input{defense/network-communication}
 
+  \section{\emoji{stopwatch} Network benchmarks}
+  % \input ...
 
+  \section{\emoji{snake} Dask: case of study for scientific computing in Kubernetes}
+  % \input ...
+
+  \section{\emoji{pushpin} Final consideration}
+  % \input ...
+
+  \input{resources/thanks-for-the-attention}
 \end{document}
 
