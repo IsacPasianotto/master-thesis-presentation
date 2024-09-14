@@ -19,5 +19,66 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{\emoji{exploding-head}  \textit{``And making any necessary changes on the host $\dots$''}}
+  \frametitle{\emoji{exploding-head}  \textit{``And making any necessary changes
+      on the host $\dots$''}}
+  \pause
+  \begin{columns}
+    \column{.4\textwidth}
+    \only<2>{\emoji{backhand-index-pointing-right} \alert{\textbf{\textit{Calico}}}}
+    \only<2>{
+      \begin{itemize}
+        \itemsep0em
+        \item Based on \alert{\textbf{BGP} routing} protocol
+        \item \textit{Felix}: agent which configures the network
+        \item \textit{BIRD}: BGP client for routing updates
+        \item \textit{confd}: ensure the configuration is up-to-date
+      \end{itemize}
+    }
+
+    \only<2>{\qquad\texttt{Flannel}}
+
+    \only<2>{\qquad\texttt{Cilium}}
+
+    \only<3->{\qquad\texttt{Calico}}
+
+    \only<3>{\emoji{backhand-index-pointing-right} \alert{\textbf{\textit{Flannel}}}}
+    \only<3>{
+      \begin{itemize}
+        \itemsep0em
+         \item Based on \alert{\textbf{VXLAN} encapsulation}
+         \item Runs a \alert{flanneld} binary agent responsible for
+           managing the network configuration, IP address management and subnets
+      \end{itemize}
+    }
+
+    \only<3>{\qquad\texttt{Cilium}}
+
+    \only<4->{\qquad\texttt{Flannel}}
+
+    \only<4->{\emoji{backhand-index-pointing-right} \alert{\textbf{\textit{Cilium}}}}
+    \only<4>{
+      \begin{itemize}
+        \itemsep0em
+        \item Based on \alert{\textbf{eBPF}} (extended Berkeley Packet Filter)
+        \item Runs a agent which configures the network
+        \item similar to a JIT compilation in a sand-boxed environment inside
+          the \alert{kernel space}
+      \end{itemize}
+    }
+    \column{.66\textwidth}
+    \begin{figure}
+      \centering
+      \only<2>{\includegraphics[width=\textwidth]{defense/img/calico-cni}}
+      \ \vfill
+      \only<2>{\includegraphics[width=.25\textwidth]{img/cnis/calico-logo}}
+      \pause
+      \only<3>{\includegraphics[width=\textwidth]{defense/img/flannel-cni}}
+      \ \vfill
+      \only<3>{\includegraphics[width=.25\textwidth]{img/cnis/flannel-logo}}
+      \pause
+      \only<4>{\includegraphics[width=\textwidth]{defense/img/cilium-cni}}
+      \ \vfill
+      \only<4>{\includegraphics[width=.25\textwidth]{img/cnis/cilium-logo}}
+    \end{figure}
+  \end{columns}
 \end{frame}
