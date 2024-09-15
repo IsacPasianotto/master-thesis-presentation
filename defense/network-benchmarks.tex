@@ -1,0 +1,135 @@
+\begin{frame}
+  \frametitle{\emoji{magnifying-glass-tilted-right} \textit{One Choice to Rule Them All}}
+  % \frametitle{\emoji{magnifying-glass-tilted-right} \textit{Choose Wisely, Young Padawan}}
+  \begin{itemize}
+    \itemsep0em
+    \item Many CNI plugins, with many different strategies and implementations
+    \item CNI plugin is the \alert{\textbf{main source of \textit{overhead}}} in any
+      Kubernetes cluster
+    \item This is a \textbf{very critical choice}...
+  \end{itemize}
+  \pause
+  \begin{center}
+    \large{
+     \emoji{thinking-face} \textit{\textbf{How to choose the best solution?}}
+    }
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{magnifying-glass-tilted-right} \textit{One Choice to Rule Them All}}
+  % \frametitle{\emoji{magnifying-glass-tilted-right} \textit{Choose Wisely, Young Padawan}}
+  \vspace{.5em}
+  \begin{block}{\emoji{light-bulb} \textit{The idea:}}
+    \begin{itemize}
+      \itemsep0em
+      \item<1-> Spawn \alert{2 pods} in \alert{2 (different) nodes}
+      \item<2-> Each pod will have a \alert{container} running an \alert{MPI
+          process}
+      \item<3-> Perform \alert{ping-pong} tests between the 2 pods \emoji{ping-pong}
+    \end{itemize}
+  \end{block}
+
+  \begin{figure}
+    \centering
+    \only<1>{\includegraphics[width=0.6\textwidth]{defense/img/mpi-comm-0}}
+    \only<2>{\includegraphics[width=0.6\textwidth]{defense/img/mpi-comm-1}}
+    \only<3>{\includegraphics[width=0.6\textwidth]{defense/img/mpi-comm-2}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{chart-increasing} \textit{Latency results}}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/latency_mp-1-node}
+    \end{figure}
+    \vfill
+    \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ \mu s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} & 0.509   & 35.301  & 29.234  & 21.0763 \\
+        \textit{Max} &  517.75 & 1969.48 & 1751.74 & 1509.11 \\
+      \end{tabular}
+    \end{table}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/latency_mp-2-nodes}
+    \end{figure}
+    \vfill
+  \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ \mu s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} & \alert{\textbf{32.746}}  & 67.46   & 70.387  & \alert{\textbf{44.373}} \\
+        \textit{Max} & 1998.00 & 3586.95 & 6485.11 & 4588.27 \\
+      \end{tabular}
+    \end{table}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{chart-increasing} \textit{Bandwidth results}}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/bibw-1-node}
+    \end{figure}
+    \vfill
+    \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ MB/s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} &  9.685    & 0.110   & 0.135   &  0.190  \\
+        \textit{Max} &  15804.14 & 2399.23 & 2688.03 & 3041.18 \\
+      \end{tabular}
+    \end{table}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/bibw-2-nodes}
+    \end{figure}
+    \vfill
+  \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ MB/s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} & 0.823   & 0.143   & 0.155   & 0.630    \\
+        \textit{Max} & \alert{\textbf{3006.66}} & 1621.07 & \alert{\textbf{1783.42}} &  \textbf{1711.73} \\
+      \end{tabular}
+    \end{table}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{1st-place-medal} \textit{And the Winner Is...}}
+  \begin{itemize}
+    \item There is \alert{\textbf{not a absolute winner}}
+    \item Some CNI pluigns are better in some scenarios, and worse in others
+    \item We want a \alert{\textbf{general purpose}} CNI plugin:
+  \end{itemize}
+  \pause
+  \vspace{1em}
+  \begin{figure}
+    \centering
+    \includegraphics[width=.65\textwidth]{img/cnis/cilium-logo}
+  \end{figure}
+\end{frame}
+
