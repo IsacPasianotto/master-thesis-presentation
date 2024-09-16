@@ -1,125 +1,128 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Page-1" id="dDATwdXApkh_-1oHt_sz">
-    <mxGraphModel dx="1430" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="986" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-178" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-178" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="420" y="107" width="290" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-190" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-190" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="520" y="125" width="88.5" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-191" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-191" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="426" y="125" width="88.5" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-177" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Operating system&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-177" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Operating system&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="410" y="220" width="310" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-187" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-187" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="616" y="125" width="88.5" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-12" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hypervisor&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-12" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hypervisor&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="190" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-1" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-1" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="166" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-4" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hardware&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-4" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hardware&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="250" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-10" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Operating system&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-10" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Operating system&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="220" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-144" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-144" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="310" y="190" as="sourcePoint" />
             <mxPoint x="390" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-145" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-145" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="220" y="190" as="sourcePoint" />
             <mxPoint x="300" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-146" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-146" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="130" y="190" as="sourcePoint" />
             <mxPoint x="210" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-147" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-147" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="130" y="226" as="sourcePoint" />
             <mxPoint x="390" y="226" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-148" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-148" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="137" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-149" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-149" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="130" y="107" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-150" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-150" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="220" y="166" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-151" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-151" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="220" y="190" as="sourcePoint" />
             <mxPoint x="300" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-152" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-152" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="220" y="137" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-153" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-153" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="220" y="107" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-154" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-154" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Guest OS&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="310" y="166" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-155" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-155" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 4;strokeWidth=1;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="310" y="190" as="sourcePoint" />
             <mxPoint x="390" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-156" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-156" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="310" y="137" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-157" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-157" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="310" y="107" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-176" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hardware&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-176" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Hardware&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="410" y="250" width="310" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-180" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container engine&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-180" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container engine&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="489" y="100" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-181" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;" parent="1" vertex="1">
-          <mxGeometry x="430" y="177" width="174" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-182" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-182" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="430" y="141" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-184" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-184" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="523" y="141" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-185" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-185" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="620" y="177" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-186" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-186" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="620" y="141" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-193" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-193" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="445" y="116" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-194" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-194" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="538" y="116" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-195" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="8k3I4b0zeFeppYjZgdu7-195" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="638" y="116" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l49sQDeNzQ1oFBbagkLO-3" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="524" y="177" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l49sQDeNzQ1oFBbagkLO-4" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="177" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
