@@ -1,6 +1,76 @@
-\begin{frame}
+
+% [fragile] is needed otherwise minted does not work
+\begin{frame}[fragile]
   \frametitle{\emoji{pinched-fingers} \textit{What is Dask?}}
   \begin{itemize}
-    \item Dask is a flexible parallel computing library for analytic computing
+    \itemsep0em
+    \item Flexible library for \alert{\textbf{parallel computing}} in
+      \alert{\textbf{Python}}
+    \item Allow to \textit{distribute the computation} \textbf{without managing the
+      parallelism}
+    \item Has a same interface of \textit{NumPy}, \textit{Pandas} and the most
+      popular libraries
+      \pause
+    \item \textit{Allows the user to \textbf{\alert{interact with the cluster
+            directly from the code!}}}
   \end{itemize}
+  \pause
+  \vfill
+  \begin{columns}
+    \column{0.5\textwidth}
+    \scriptsize
+    \begin{minted}{python}
+from dask_jobqueue import SLURMCluster
+cluster = SLURMCluster(
+    job_cpu=8,
+    job_mem='32GB',
+    account='project',
+    queue='partition',
+    walltime='00:30:00',
+)
+cluster.adapt(
+  minimum_jobs=2,
+  maximum_jobs=10)
+  \end{minted}
+    \column{.5\textwidth}
+    \scriptsize
+    \begin{minted}{python}
+from dask_kubernetes.operator import KubeCluster
+cluster = KubeCluster(
+    name='my-cluster',
+    resources={ 'requests': {
+        'cpu': '4', 'memory': '16Gi'
+      },
+                'limits': {
+        'cpu': '8', 'memory': '326Gi'
+      }
+    }
+)
+cluster.adapt(minimum=2, maximum=10)
+    \end{minted}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{face-with-monocle} \textit{How we are going to use Dask?}}
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{defense/img/dask-diagram}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{chart-increasing} \textit{Results}}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{defense/img/array-block-wise-operation}
+    \end{figure}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{defense/img/array-sum-the-transpose}
+    \end{figure}
+  \end{columns}
 \end{frame}

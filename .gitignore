@@ -6,6 +6,7 @@
 *.out  
 *.snm  
 *.toc
+*.vrb
 *.pdf  
 
 
@@ -18,3 +19,8 @@
 
 # Drawio backup files: 
 **/*.drawio.bkp
+
+# Minted
+/_minted-defense/
+/_minted-defense/*
+
