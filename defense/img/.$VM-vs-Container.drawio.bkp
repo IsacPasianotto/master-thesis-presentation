@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
   <diagram name="Page-1" id="dDATwdXApkh_-1oHt_sz">
-    <mxGraphModel dx="1430" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="986" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -97,9 +97,6 @@
         <mxCell id="8k3I4b0zeFeppYjZgdu7-180" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container engine&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="489" y="100" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8k3I4b0zeFeppYjZgdu7-181" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
-          <mxGeometry x="430" y="177" width="174" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="8k3I4b0zeFeppYjZgdu7-182" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Application&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="430" y="141" width="80" height="30" as="geometry" />
         </mxCell>
@@ -120,6 +117,12 @@
         </mxCell>
         <mxCell id="8k3I4b0zeFeppYjZgdu7-195" value="&lt;font face=&quot;newcomputermodern&quot;&gt;Container&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
           <mxGeometry x="638" y="116" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l49sQDeNzQ1oFBbagkLO-3" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="524" y="177" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l49sQDeNzQ1oFBbagkLO-4" value="&lt;pre&gt;&lt;font face=&quot;newcomputermodern&quot;&gt;/lib &amp;amp; /bin&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="177" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,0 +1,103 @@
+\begin{frame}
+  \frametitle{\emoji{puzzle-piece} \textit{CNI plugins}}
+  \vspace{.5em}
+  \begin{block}{\emoji{memo} \emph{Def.}}
+    \begin{quote}{Red Hat sysadmin's guide}
+      \vspace{.5em}
+      % \small
+      A CNI plugin is responsible for \alert{\textbf{inserting a network interface}} into the
+      \alert{\textbf{container network namespace}} (e.g., one end of a virtual ethernet (veth)
+      pair) and making any \alert{\textbf{necessary changes}} on the host (e.g., attaching the
+      other end of the veth into a bridge).
+    \end{quote}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{exploding-head}  \textit{``And making any necessary changes
+      on the host $\dots$''}}
+  \begin{columns}
+    \column{.5\textwidth}
+    \only<2>{\emoji{right-arrow} }
+    \only<2->{\textit{\textbf{Calico}}:  \alert{\textbf{BGP}} routing}
+
+    \vspace{.5em}
+    \only<3>{\emoji{right-arrow} }
+    \only<3->{\textit{\textbf{Flannel}}:  \alert{\textbf{VXLAN}} encapsulation}
+
+    \vspace{.5em}
+    \only<4>{\emoji{right-arrow} }
+    \only<4->{\textit{\textbf{Cilium}}:  \alert{\textbf{eBPF}} filtering
+      directly in kernel space}
+    \column{.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\textwidth]{little-one/img/CNI-generic}
+    \end{figure}
+  \end{columns}
+    \pause
+    \pause
+    \pause
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{magnifying-glass-tilted-right} \textit{One Choice to Rule Them All}}
+  \vspace{.5em}
+  \begin{block}{\emoji{light-bulb} \textit{The idea:}}
+    \begin{itemize}
+      \itemsep0em
+      \item<1-> Spawn \alert{2 pods} in \alert{2 (different) nodes}
+      \item<2-> Each pod will have a \alert{container} running an \alert{MPI
+          process}
+      \item<3-> Perform \alert{ping-pong} tests between the 2 pods \emoji{ping-pong}
+    \end{itemize}
+  \end{block}
+
+  \begin{figure}
+    \centering
+    \only<1>{\includegraphics[width=0.6\textwidth]{little-one/img/mpi-comm-0}}
+    \only<2>{\includegraphics[width=0.6\textwidth]{little-one/img/mpi-comm-1}}
+    \only<3>{\includegraphics[width=0.6\textwidth]{little-one/img/mpi-comm-2}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{chart-increasing} \textit{Latency results}}
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/latency_mp-1-node}
+    \end{figure}
+    \vfill
+    \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ \mu s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} & 0.5   & 35.3  & 29.2  & 21.1 \\
+        \textit{Max} &  $\expnumber{0.5}{3}$ & $\expnumber{2.0}{3}$ & $\expnumber{1.8}{3}$ & $\expnumber{1.5}{3}$ \\
+      \end{tabular}
+    \end{table}
+    \column{0.5\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=1.0\textwidth]{defense/img/latency_mp-2-nodes}
+    \end{figure}
+    \vfill
+  \begin{table}
+      \centering
+      \scriptsize
+      % \begin{tabular}{c|cccc}
+      \begin{tabular}{ccccc}
+        $\left[ \mu s \right]$ & \textit{Bare metal} & \textit{Calico} & \textit{Flannel} & \textit{Cilium} \\
+        \midrule
+        \textit{Min} & \alert{\textbf{32.7}}  & 67.5   & 70.4  & \alert{\textbf{44.4}} \\
+        \textit{Max} & $\expnumber{2.0}{3}$ & $\expnumber{3.6}{3}$ & $\expnumber{6.5}{3}$ & $\expnumber{4.6}{3}$ \\
+      \end{tabular}
+    \end{table}
+  \end{columns}
+\end{frame}
+

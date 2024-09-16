@@ -19,23 +19,3 @@
       be \alert{\textbf{optimistic}} about the future
   \end{itemize}
 \end{frame}
-
-\begin{frame}
-  \frametitle{\emoji{rocket} \textit{Possible improvements and future directions}}
-  \textbf{\textit{Mellanox}}
-  \begin{itemize}
-    \itemsep0em
-    \item Use \alert{\textbf{Inifniband}} instead of Ethernet
-    \item Should mitigate the communication problems
-  \end{itemize}
-  \pause
-  \vspace{.5em}
-  \textbf{\textit{Multus}}
-  \begin{itemize}
-    \itemsep0em
-    \item Attach \textbf{multiple network interfaces} to a pod
-    \item \alert{\textbf{Split traffic}} among different interfaces (e.g.
-      \alert{data} on Infiniband, \alert{checks} on Ethernet)
-    \item Allow to choose the desired CNI plugin
-  \end{itemize}
-\end{frame}

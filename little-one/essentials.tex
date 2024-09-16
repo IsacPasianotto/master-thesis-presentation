@@ -1,0 +1,83 @@
+\begin{frame}
+  \frametitle{\emoji{face-in-clouds} What is \textit{``Cloud Computing''}}
+
+  \begin{quote}{R. Buyya \emph{et~al.} \textit{Cloud Computing: Principles and Paradigms}}
+    ``Cloud computing has been coined as an umbrella term to describe a category of
+    sophisticated \alert{\textbf{on-demand computing services}} initially offered by commercial providers''
+  \end{quote}
+
+  \pause
+
+  \begin{block}{\emoji{cloud} \textit{for us:}}
+    \textit{
+      Cloud Computing is the result of the \alert{\textbf{evolution}} of the computing concept
+      \alert{\textbf{driven by the technology}} improvements and by users’ requirements.
+    }
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{man-technologist-light-skin-tone} \textit{Which
+      technologies?}}
+
+  \emoji{desktop-computer} \textbf{Virtualization}
+  \begin{itemize}
+    \itemsep0em
+    \item Isolated environment with its own OS and resources
+    \item \textbf{\alert{Overhead}} for the \alert{hypervisor}
+  \end{itemize}
+
+  \pause
+
+  \emoji{package} \textbf{Containerization}
+  \begin{itemize}
+    \itemsep0em
+    \item Host's \alert{processes} $\to$ they share the Kernel with the host
+    \item Build over \alert{namespaces}, \alert{cgroups}, and \alert{capabilities}
+  \end{itemize}
+
+  \pause
+
+   \begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{little-one/img/VM-vs-Container-bw}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\emoji{face-with-raised-eyebrow} \textit{Why?}}
+  \begin{columns}
+     \column{0.66\textwidth}
+     \emoji{balance-scale} \textbf{Performance/Usability trade-off}
+     \begin{itemize}
+       \itemsep0em
+       \item \alert{Ease of use} and \alert{scalability} of the cloud (SaaS)
+       \item \alert{\textbf{Container orchestration}}: simplify the interaction
+         with the cluster for both the user and the administrator
+       \begin{itemize}
+         \itemsep0em
+         \item Automatic scaling and load balancing
+         \item Availability, self healing and fault tolerance
+         \item \alert{\textbf{Standardized API}} $\to$ portability
+         \item $\dots$
+       \end{itemize}
+     \end{itemize}
+     \column{0.33\textwidth}
+     \begin{figure}
+       \centering
+       \includegraphics[width=0.75\textwidth]{img/logos/kubernetes-logo}
+    \end{figure}
+  \end{columns}
+   \vfill
+   \pause
+  \begin{block}{\emoji{skull-and-crossbones} \textit{First attempts in this
+        direction were catastrophic}}
+    \centering
+    \large
+    \textbf{\textit{
+        \emoji{hourglass-not-done} Network latency rapidly became the bottleneck
+        of the system
+        }}
+  \end{block}
+\end{frame}
+
