@@ -27,16 +27,12 @@
     \item \textbf{\alert{Overhead}} for the \alert{hypervisor}
   \end{itemize}
 
-  \pause
-
   \emoji{package} \textbf{Containerization}
   \begin{itemize}
     \itemsep0em
     \item Host's \alert{processes} $\to$ they share the Kernel with the host
     \item Build over \alert{namespaces}, \alert{cgroups}, and \alert{capabilities}
   \end{itemize}
-
-  \pause
 
    \begin{figure}
     \centering
@@ -49,19 +45,17 @@
   \begin{columns}
      \column{0.66\textwidth}
      \emoji{balance-scale} \textbf{Performance/Usability trade-off}
-     \begin{itemize}
-       \itemsep0em
-       \item \alert{Ease of use} and \alert{scalability} of the cloud (SaaS)
-       \item \alert{\textbf{Container orchestration}}: simplify the interaction
+
+     \alert{\textbf{Container orchestrator}}: simplify the interaction
          with the cluster for both the user and the administrator
        \begin{itemize}
          \itemsep0em
          \item Automatic scaling and load balancing
          \item Availability, self healing and fault tolerance
+         \item Micro-services architecture and immediate \textit{SaaS}
          \item \alert{\textbf{Standardized API}} $\to$ portability
          \item $\dots$
        \end{itemize}
-     \end{itemize}
      \column{0.33\textwidth}
      \begin{figure}
        \centering
@@ -70,6 +64,7 @@
   \end{columns}
    \vfill
    \pause
+
   \begin{block}{\emoji{skull-and-crossbones} \textit{First attempts in this
         direction were catastrophic}}
     \centering
