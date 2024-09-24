@@ -1,4 +1,18 @@
 #+title: LaTeX presentations with beamer
 #+author: Isac Pasianotto
 
-TODO: all
+LaTeX code for the slide I made for the thesis defense presentation.
+
+There are two version available, the ~defense.tex~ code which is the one I used for the actual thesis defense.
+The second one is ~little-one.tex~, which is a summarized version used for the small presentation performed during the graduation ceremony.
+
+To compile the code, you need to have ~lualatex~ installed, and you can use the [[compile.sh][compile.sh]] script to compile the code:
+
+#+begin_src sh
+./compile.sh <tex_file.tex>
+#+end_src
+
+
+** Credits
+
+The template used for the presentation was heavily based on the [[https://github.com/emaballarin/carso-msc-thesis][Emanuele's customization]] of the [[https://github.com/matze/mtheme][Metropolis theme]].
